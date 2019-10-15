@@ -14,7 +14,7 @@
   (let ((acc nil))
     (dolist (x lst)
       (let ((val (funcall fn x)))
-	(if val (push val acc))))
+	(if val (push x acc))))
     (nreverse acc)))
 
 (defun most (fn lst)
